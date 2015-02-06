@@ -4,13 +4,13 @@ A security screening technique with simple K-Means Clustering.  Ensure all varia
 
 ###Usage
 ---
-Simply run the function __kPortfolio()__ in Matlab with your dataset.  The file   _NCheck.m_ (along with __NCheck()__ function) is an accessory file in assisting to find optimal K
+Simply run the function __kPortfolio()__ in Matlab with your dataset.  The file _NCheck.m_ (along with __NCheck()__ function) is an accessory file in assisting to find optimal K
 
 ###Input
 ---
 * __x__ - an N (assets) by M (variables) matrix
-* __avgN__ - Required Average number of Assets per clustered portfolio.  This rule is used to screen out undiversified, concentrated portfolios.
-* __avgRange__ - Range that average number of assets may fall within ex: [avgN - 2, avgN + 2]
+* __avgN__ - Required Average number of Assets per clustered portfolio.  This rule is used to screen out undiversified, concentrated portfolios. _Default: 25_
+* __avgRange__ - Range that average number of assets may fall within ex: [avgN - 2, avgN + 2].  This input guarantees that the final portfolio will have atleast N=avgN-avgRange securities in the portfolio.  _Default: 2_
 
 ###Output
 ---
@@ -22,4 +22,4 @@ Simply run the function __kPortfolio()__ in Matlab with your dataset.  The file 
 ---
 [Using K-Means for Value Investors](http://kpei.me/blog/?p=350)  
 [k-means clustering Matlab function](http://www.mathworks.com/help/stats/kmeans.html)   
-[k-means clustering](http://en.wikipedia.org/wiki/K-means_clustering)
+[k-means clustering Wikipedia](http://en.wikipedia.org/wiki/K-means_clustering)
